@@ -10,7 +10,6 @@ import UrlRow from "@/Components/UrlRow.vue";
 const props = defineProps({
     urls: Object,
 });
-console.log(props.urls, "the value of urlsl");
 
 const toaster = createToaster({ position: "top-right", duration: 4000 });
 

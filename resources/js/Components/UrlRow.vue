@@ -19,8 +19,6 @@ const urlData = ref(null);
 const handleEdit = (data) => {
     if (!form.long_url) return;
 
-    console.log(data, 'url data')
-
     router.put(
         route("urls:update", { url: data?.slug }),
         { long_url: form.long_url },
